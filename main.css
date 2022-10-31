@@ -76,10 +76,12 @@ h2 {
 .hero {
     display: flex;
 }
-.hero .hero-graphic {
+.hero-graphic {
     height: 519px;
     width: 50%;
+    display: flex;
 }
+
 .hero .hero-card {
     width: 50%;
     display: flex;
@@ -99,14 +101,27 @@ h2 {
 
 .hero-image {
     height: 100%;
+    width: 100%;
     background: url('images/hero-image.png') no-repeat center;
+    z-index: 3;
 }
 
-.hero-image .hero-blur {
+/* .hero-image .hero-blur {
     background: var(--pink) no-repeat center;
     filter: blur(103.368px);
     width: 311.52px;
     height: 311.52px;
+} */
+
+.hero-graphic .hero-blur {
+    background: url('images/first_elipse.png') no-repeat center;
+    filter: blur(103.368px);
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card-info {
