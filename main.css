@@ -313,6 +313,11 @@ h2 {
     align-items: flex-start;
 }
 
+.footer {
+    display: flex;
+    margin-bottom: 120px;
+}
+
 .footer-upsell {
     border-top: 2px solid #EEEEEE;
     border-bottom: 2px solid #EEEEEE;
@@ -343,8 +348,7 @@ h2 {
 .footer-left .logo {
     display: flex;
     align-items: center;
-    column-gap: 12px;
-    
+    column-gap: 12px; 
 }
 
 .footer-left .logo .title {
@@ -356,6 +360,12 @@ h2 {
     margin: 0;
 }
 
+.footer-right {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+
+}
 .footer-right .column-text .title-item {
     font-family: 'Inter';
     font-style: normal;
@@ -368,10 +378,30 @@ h2 {
     margin-bottom: 28px;
 }
 
+.footer-right .column-text .item-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
 .footer-right .column-text .text-item {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.bottom .left-side,
+.bottom .right-side {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #999999;
 }
