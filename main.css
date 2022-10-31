@@ -1,0 +1,377 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 0;
+}
+
+:root {
+    --pink: #FF3998;
+    --gray: #555555;
+    --black: #111111;
+    --orange: #FF8139;
+}
+
+
+.orange {
+    color: var(--orange);
+}
+
+.gray {
+    color: var(--gray);
+}
+
+.black {
+    color: var(--black);
+}
+
+.container {
+    padding: 70px 80px;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 172px;
+}
+.left-side {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+.left-side p {
+    margin: 0;
+}
+.left-side .title {
+    font-family: 'Varela Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.05em;
+    color: var(--black)
+}
+.right-side {
+    display: flex;
+    justify-content: flex-end;
+    gap: 28px;
+    align-items: center;
+}
+
+.right-side .header-choices {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: var(--gray); 
+}
+
+.header-choices.pink {
+    color: var(--pink);
+}
+
+.hero {
+    display: flex;
+}
+.hero .hero-graphic {
+    height: 519px;
+    width: 50%;
+}
+.hero .hero-card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.gray-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray);
+}
+
+.hero-image {
+    height: 100%;
+    background: url('images/hero-image.png') no-repeat center;
+}
+
+.hero-image .hero-blur {
+    background: var(--pink) no-repeat center;
+    filter: blur(103.368px);
+    width: 311.52px;
+    height: 311.52px;
+}
+
+.card-info {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--pink);
+}
+
+.card-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 116px;
+}
+.signup {
+    text-decoration: none;
+    color: var(--black);
+    border: 4px solid #000000;
+    background: linear-gradient(to right, darkblue, darkorchid) 1;
+    border-radius: 100px;
+
+}
+.signup .signup-text {
+    background: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding: 22px 56px;
+    border-radius: 100px;
+}
+
+.card-text {
+    margin: 0;
+}
+
+.upsell {
+    width: 100%;
+    height: 320px;
+    background: rgb(208,21,21);
+    background: linear-gradient(90deg, rgba(208,21,21,1) 0%, rgba(253,123,29,1) 73%, rgba(69,252,84,1) 100%);
+    margin-top: 182px;
+    margin-bottom: 120px;
+    border-radius: 16px;
+}
+
+.upsell .upsell-text {
+    padding: 154px 596px 64px 64px;
+}
+
+.upsell .upsell-text-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.upsell .upsell-text-main {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.press {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.showcase .main-text {
+    margin-bottom: 56px;
+}
+
+.showcase .showcase-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.marked-part {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.auction-item {
+    background-color: #EEEEEE;
+    border-radius: 16px;
+    width: 25%;
+}
+
+
+.auction-wrapper {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 120px;
+}
+
+.auction-item-text {
+    display: flex;
+}
+
+.auction-image .picture {
+    width: 100%;
+    height: 100%;
+}
+
+.auction-item .left-side-text {
+    width: 50%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.auction-item .right-side-text {
+    width: 50%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.auction-item .left-side-text .text-item:nth-child(1),
+.auction-item .right-side-text .text-item:nth-child(1) {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.auction-item .left-side-text .text-item:nth-child(2) {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    color: var(--black);
+}
+
+.auction-item .right-side-text .text-item:nth-child(2) {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.auction-item .left-side-text .text-item:nth-child(3),
+.auction-item .right-side-text .text-item:nth-child(3) {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #777777;
+}
+
+.auction-item .right-side-text {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+.upsell-graphic {
+    height: 519px;
+    width: 50%;
+}
+
+.footer-upsell {
+    display: flex;
+}
+
+.upsell-image {
+    height: 100%;
+    background: url('images/upsell-footer.svg') no-repeat bottom;
+}
+
+.upsell-card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-upsell {
+    border-top: 2px solid #EEEEEE;
+    border-bottom: 2px solid #EEEEEE;
+    margin-bottom: 120px;
+}
+
+.footer-upsell .upsell-card {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.footer-upsell .card-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 68px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 12px;
+    width: 50%;
+}
+
+.footer-left .logo {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    
+}
+
+.footer-left .logo .title {
+    font-family: 'Varela Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    margin: 0;
+}
+
+.footer-right .column-text .title-item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #555555;
+    margin-bottom: 28px;
+}
+
+.footer-right .column-text .text-item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+}
